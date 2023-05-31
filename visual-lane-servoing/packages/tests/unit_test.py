@@ -28,7 +28,7 @@ class UnitTestMessage:
 class UnitTestLMO:
     # Test the detection and estimation of lane marking orientations
     def __init__(self, LMOrientation):
-        imgbgr = cv2.imread("../images/visual_control/test.png")
+        imgbgr = cv2.imread("../images/visual_control/pic10.png")
 
         theta_left, theta_right, mask_lt, mask_rt = LMOrientation(imgbgr)
         print()
